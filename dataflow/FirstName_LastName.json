@@ -28,7 +28,7 @@
 			],
 			"scriptLines": [
 				"source(output(",
-				"          CustomerKey as string,",
+				"          CustomerKey as integer,",
 				"          CustomerName as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
