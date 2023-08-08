@@ -1,0 +1,51 @@
+{
+	"name": "ds_azSQL_employee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EmployeeNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ename",
+				"type": "varchar"
+			},
+			{
+				"name": "Job",
+				"type": "varchar"
+			},
+			{
+				"name": "Hiredate",
+				"type": "date"
+			},
+			{
+				"name": "DepartmentNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Sal",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Comm",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "employee"
+		}
+	}
+}
