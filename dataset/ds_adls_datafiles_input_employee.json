@@ -21,11 +21,31 @@
 		},
 		"schema": [
 			{
-				"name": "CustomerKey",
+				"name": "EmployeeNO",
 				"type": "String"
 			},
 			{
-				"name": "CustomerName",
+				"name": "Ename",
+				"type": "String"
+			},
+			{
+				"name": "Job",
+				"type": "String"
+			},
+			{
+				"name": "Hiredate",
+				"type": "String"
+			},
+			{
+				"name": "DepartmentNO",
+				"type": "String"
+			},
+			{
+				"name": "Sal",
+				"type": "String"
+			},
+			{
+				"name": "Comm",
 				"type": "String"
 			}
 		]
