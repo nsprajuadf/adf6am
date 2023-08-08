@@ -9,21 +9,38 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "CustomerKey",
+				"name": "EmployeeNO",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "CustomerName",
+				"name": "Ename",
 				"type": "varchar"
 			},
 			{
-				"name": "FirstName",
+				"name": "Job",
 				"type": "varchar"
 			},
 			{
-				"name": "LastName",
-				"type": "varchar"
+				"name": "Hiredate",
+				"type": "date"
+			},
+			{
+				"name": "DepartmentNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Sal",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Comm",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
 			}
 		],
 		"typeProperties": {

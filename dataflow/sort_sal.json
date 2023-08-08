@@ -44,10 +44,13 @@
 				"sort1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     input(",
-				"          CustomerKey as integer,",
-				"          CustomerName as string,",
-				"          FirstName as string,",
-				"          LastName as string",
+				"          EmployeeNO as integer,",
+				"          Ename as string,",
+				"          Job as string,",
+				"          Hiredate as date,",
+				"          DepartmentNO as integer,",
+				"          Sal as decimal(19,4),",
+				"          Comm as decimal(19,4)",
 				"     ),",
 				"     deletable:false,",
 				"     insertable:true,",
@@ -56,7 +59,16 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
+				"     errorHandlingOption: 'stopOnFirstError',",
+				"     mapColumn(",
+				"          EmployeeNO,",
+				"          Ename,",
+				"          Job,",
+				"          Hiredate,",
+				"          DepartmentNO,",
+				"          Sal,",
+				"          Comm",
+				"     )) ~> sink1"
 			]
 		}
 	}
