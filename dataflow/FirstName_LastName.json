@@ -1,0 +1,33 @@
+{
+	"name": "FirstName_LastName",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_adls_datafiles_input_customer",
+						"type": "DatasetReference"
+					},
+					"name": "srcCustomer"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          CustomerKey as string,",
+				"          CustomerName as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> srcCustomer",
+				"srcCustomer derive(FirstName = left(CustomerName, instr(CustomerName, ' '))) ~> derivedColumn1"
+			]
+		}
+	}
+}

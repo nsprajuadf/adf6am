@@ -19,6 +19,15 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "CustomerKey",
+				"type": "String"
+			},
+			{
+				"name": "CustomerName",
+				"type": "String"
+			}
+		]
 	}
 }
