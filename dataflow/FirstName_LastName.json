@@ -26,7 +26,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> srcCustomer",
-				"srcCustomer derive(FirstName = left(CustomerName, instr(CustomerName, ' '))) ~> derivedColumn1"
+				"srcCustomer derive(FirstName = left(CustomerName, instr(CustomerName, ' ')),",
+				"          LastName = right(CustomerName, length(CustomerName)-instr(CustomerName, ' '))) ~> derivedColumn1"
 			]
 		}
 	}
