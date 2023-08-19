@@ -1,10 +1,6 @@
 {
 	"name": "ds_azSQL_employee",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "ls_azSQL",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
