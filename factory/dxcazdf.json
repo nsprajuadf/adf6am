@@ -1,0 +1,9 @@
+{
+	"name": "dxcazdf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "13a11d9c-65af-4989-a8ac-fa900b9c197b",
+		"tenantId": "309dd320-e9a4-4eb9-8880-6ba863225f98"
+	}
+}
